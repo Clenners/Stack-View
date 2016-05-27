@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nem-bn-fBe">
-                                <rect key="frame" x="12" y="0.0" width="600" height="432"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nem-bn-fBe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxI-8g-NHw" userLabel="Blurb">
-                                        <rect key="frame" x="40" y="0.0" width="521" height="94"/>
+                                        <rect key="frame" x="40" y="0.0" width="521" height="262"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t8x-FH-woy">
-                                                <rect key="frame" x="0.0" y="0.0" width="521" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="521" height="262"/>
                                                 <string key="text">This is a label on the app that I'm replicating as part of the Mark Price iOS course. This couese can be found on Udemy. I got it for crazy cheap in a sale over new year. I seem to remember it being 95% off or something crazy.</string>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -33,15 +33,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-Li-fKP" userLabel="Circle">
-                                        <rect key="frame" x="204" y="94" width="192" height="159"/>
+                                        <rect key="frame" x="204" y="262" width="192" height="159"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="GJD-lW-wZj">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="GJD-lW-wZj">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="159"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iw8-Dc-ki5" userLabel="Bottom Nav">
-                                        <rect key="frame" x="12" y="253" width="576" height="179"/>
+                                        <rect key="frame" x="12" y="421" width="576" height="179"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zX7-2I-zIG" userLabel="Post">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="179"/>
@@ -97,10 +97,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nem-bn-fBe" secondAttribute="trailing" id="15w-cS-nLs"/>
                             <constraint firstItem="Nem-bn-fBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="25u-xe-PTt"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nem-bn-fBe" secondAttribute="bottom" constant="168" id="DU0-E4-zsR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nem-bn-fBe" secondAttribute="bottom" id="5G7-lY-KgY"/>
                             <constraint firstItem="Nem-bn-fBe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jlz-9N-JKZ"/>
                             <constraint firstAttribute="trailing" secondItem="Nem-bn-fBe" secondAttribute="trailing" id="bwS-DB-OzC"/>
+                            <constraint firstItem="Nem-bn-fBe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i4x-Sf-fJ3"/>
+                            <constraint firstItem="Nem-bn-fBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jhg-Lk-ZzS"/>
                         </constraints>
                     </view>
                 </viewController>
