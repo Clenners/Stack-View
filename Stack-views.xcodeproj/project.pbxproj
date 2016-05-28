@@ -289,6 +289,7 @@
 				F93661431CF8998E003BC46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

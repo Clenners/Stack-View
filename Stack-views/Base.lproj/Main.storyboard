@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,101 +15,104 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nem-bn-fBe">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gbA-uw-Vhm">
+                                <rect key="frame" x="20" y="40" width="696" height="374"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxI-8g-NHw" userLabel="Blurb">
-                                        <rect key="frame" x="40" y="0.0" width="521" height="80"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t8x-FH-woy">
-                                                <rect key="frame" x="0.0" y="0.0" width="521" height="80"/>
-                                                <string key="text">This is a label on the app that I'm replicating as part of the Mark Price iOS course. This couese can be found on Udemy. I got it for crazy cheap in a sale over new year. I seem to remember it being 95% off or something crazy.</string>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nCu-YA-ySm">
+                                        <rect key="frame" x="0.0" y="0.0" width="696" height="99"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="5pq-CH-Hlp"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="nAh-Gp-3X5">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                            </constraint>
                                         </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-Li-fKP" userLabel="Circle">
-                                        <rect key="frame" x="204" y="80" width="192" height="341"/>
+                                        <string key="text">This is a label on the app that I'm replicating as part of the Mark Price iOS course. This course can be found on Udemy. I got it for crazy cheap in a sale over new year. I seem to remember it being 95% off or something crazy.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-R0-G9x">
+                                        <rect key="frame" x="0.0" y="119" width="696" height="159"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="GJD-lW-wZj">
-                                                <rect key="frame" x="0.0" y="0.0" width="192" height="341"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="770" misplaced="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-8O-glX">
+                                                <rect key="frame" x="0.0" y="0.0" width="696" height="159"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Iw8-Dc-ki5" userLabel="Bottom Nav">
-                                        <rect key="frame" x="0.0" y="421" width="600" height="179"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pRp-Sc-PYL">
+                                        <rect key="frame" x="0.0" y="298" width="696" height="76"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zX7-2I-zIG" userLabel="Post">
-                                                <rect key="frame" x="0.0" y="0.0" width="134" height="179"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z0B-aG-Z4j">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="76"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-tZ-Ry7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134" height="159"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="O7R-db-ht4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="6R6-JD-bgm"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO0-zq-QpB">
-                                                        <rect key="frame" x="0.0" y="159" width="134" height="20"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Post" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-mL-Np3">
+                                                        <rect key="frame" x="0.0" y="60" width="206" height="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-rN-BJr" userLabel="Favourites">
-                                                <rect key="frame" x="234" y="0.0" width="133" height="179"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GKU-eH-XSu">
+                                                <rect key="frame" x="246" y="0.0" width="205" height="76"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-Es-wgY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="159"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-yr-mhz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="i2W-a5-U5w"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-pS-Z7G">
-                                                        <rect key="frame" x="0.0" y="159" width="133" height="20"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favourites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPx-BV-Dfv">
+                                                        <rect key="frame" x="0.0" y="60" width="205" height="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-vl-Ujw" userLabel="Mail">
-                                                <rect key="frame" x="467" y="0.0" width="134" height="179"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="92S-gv-zYq">
+                                                <rect key="frame" x="491" y="0.0" width="206" height="76"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6zH-ZY-q90">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134" height="179"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="DlZ-qg-RN4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="159"/>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqG-ZX-tFv">
-                                                                <rect key="frame" x="0.0" y="159" width="134" height="20"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="Fgw-ne-ZD4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="gUj-wd-HlM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Inbox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1b-ZB-pDp">
+                                                        <rect key="frame" x="0.0" y="60" width="206" height="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Lsa-HA-aF6"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Nem-bn-fBe" secondAttribute="trailing" id="15w-cS-nLs"/>
-                            <constraint firstItem="Nem-bn-fBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="25u-xe-PTt"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nem-bn-fBe" secondAttribute="bottom" id="5G7-lY-KgY"/>
-                            <constraint firstItem="Nem-bn-fBe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jlz-9N-JKZ"/>
-                            <constraint firstAttribute="trailing" secondItem="Nem-bn-fBe" secondAttribute="trailing" id="bwS-DB-OzC"/>
-                            <constraint firstItem="Nem-bn-fBe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i4x-Sf-fJ3"/>
-                            <constraint firstItem="Nem-bn-fBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jhg-Lk-ZzS"/>
+                            <constraint firstItem="gbA-uw-Vhm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5x2-EN-Moz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gbA-uw-Vhm" secondAttribute="bottom" id="9Jz-OI-Pvi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gbA-uw-Vhm" secondAttribute="trailing" id="Hg7-h7-ruM"/>
+                            <constraint firstItem="gbA-uw-Vhm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Tot-D9-Iak"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
