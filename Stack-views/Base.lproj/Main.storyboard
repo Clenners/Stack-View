@@ -33,7 +33,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-R0-G9x">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-R0-G9x">
                                         <rect key="frame" x="0.0" y="119" width="696" height="159"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="770" misplaced="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-8O-glX">
